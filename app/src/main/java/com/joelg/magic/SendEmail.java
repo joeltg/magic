@@ -28,9 +28,9 @@ public class SendEmail extends AsyncTask<String, Void, String> {
 
     }
     public static void main(String[] args) {
-
-        final String username = "jtg003";
-        final String password = "comotellamas";
+        // Fill in username
+        final String username = "username";
+        final String password = "*******";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -52,9 +52,9 @@ public class SendEmail extends AsyncTask<String, Void, String> {
         try {
             System.out.println("Well");
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("jtg003@gmail.com"));
+            message.setFrom(new InternetAddress(username + "@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse("jtg003@gmail.com"));
+                    InternetAddress.parse(username + "@gmail.com"));
             message.setSubject("Testing Subject");
             message.setText("Dear Mail Crawler,"
                     + "\n\n No spam to my email, please!");
