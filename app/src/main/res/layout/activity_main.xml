@@ -7,14 +7,29 @@
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
-    <TextView android:layout_width="wrap_content"
-        android:textSize="24sp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"/>
     <ImageView
         android:contentDescription="@string/Card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="Return"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:text="Clear Deck"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto-send"
+        android:id="@+id/autosend"/>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"/>
 </LinearLayout>

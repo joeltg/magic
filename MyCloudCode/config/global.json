@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Magic": {
+            "applicationId": "sW1XxuXhJsO62eXQ6mSn2P4dnA9O0tyeFQjMYEnx", 
+            "masterKey": "uFn2vk6VmPasAg1AU8EFYqMH4g7V10TDeZ9EQN5B"
+        }, 
+        "_default": {
+            "link": "Magic"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.4.0"
+    }
+}
