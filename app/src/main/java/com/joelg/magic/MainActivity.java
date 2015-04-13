@@ -236,7 +236,7 @@ public class MainActivity extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Parse.initialize(this, "sW1XxuXhJsO62eXQ6mSn2P4dnA9O0tyeFQjMYEnx", "J7cEt8Fdhvn5k7QLL1xzfNtyj7bfSr9eIVfRnbOM");
+        Parse.initialize(this, "parse app key", "parse app key secret");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -247,17 +247,10 @@ public class MainActivity extends Activity{
         autosend = (CheckBox) findViewById(R.id.autosend);
         adapter = new CustomAdapter(this, R.layout.users, new ArrayList<User>());
         mListView.setAdapter(adapter);
-        adapter.add(new User("Joel's email", "joelg@mit.edu"));
-        adapter.add(new User("Joel (Google Voice)", "6109158059"));
-        adapter.add(new User("Novy", "novysan@media.mit.edu"));
-        adapter.add(new User("Kenny", "315-383-3921"));
-        adapter.add(new User("JBobrow", "jbobrow@media.mit.edu"));
-        adapter.add(new User("Greg", "gregab@mit.edu"));
-        adapter.add(new User("Colin", "215-915-3556"));
-        adapter.add(new User("Jenn", "813-846-1670"));
-        adapter.add(new User("Carolx", "carolinex@gmail.com"));
-        adapter.add(new User("Isa Almeida", "meuemail.isa@gmail.com"));
-        adapter.add(new User("Kyrie", "kyrieehc@mit.edu"));
+        
+        // Add list of contacts here
+        adapter.add(new User("Joel's email", "xxxxxxxxx@mit.edu"));
+        adapter.add(new User("Joel's phone", "xxx-xxx-xxxx"));
 
         mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
 
